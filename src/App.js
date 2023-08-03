@@ -21,6 +21,23 @@ import rectangleImg2 from "./assets/Imgs/Rectangle 336 (2).png";
 import rectangleImg3 from "./assets/Imgs/Rectangle 336 (3).png";
 import rectangleImg4 from "./assets/Imgs/Rectangle 336 (4).png";
 import rectangleImg5 from "./assets/Imgs/Rectangle 336 (5).png";
+import FeatureRestaurant from "./components/featureRestaurant/FeatureRestaurant";
+import foodPhoto1 from './assets/Imgs/Food Photo (1).png';
+import foodPhoto2 from './assets/Imgs/Food Photo (2).png';
+import foodPhoto3 from './assets/Imgs/Food Photo (3).png';
+import foodPhoto4 from './assets/Imgs/Food Photo (4).png';
+import foodPhoto5 from './assets/Imgs/Food Photo (5).png';
+import foodPhoto6 from './assets/Imgs/Food Photo (6).png';
+import foodPhoto7 from './assets/Imgs/Food Photo (7).png';
+import foodPhoto8 from './assets/Imgs/Food Photo (8).png';
+import img1 from './assets/Imgs/Image (1).png';
+import img2 from './assets/Imgs/Image (2).png';
+import img3 from './assets/Imgs/Image (3).png';
+import img4 from './assets/Imgs/Image (4).png';
+import img5 from './assets/Imgs/Image (5).png';
+import img6 from './assets/Imgs/Image (6).png';
+import img7 from './assets/Imgs/Image (7).png';
+import img8 from './assets/Imgs/Image (8).png';
 function App() {
   return (
     <div>
@@ -146,6 +163,27 @@ function App() {
             </div>
           </div>
         </div>
+        <div className="container mt-5">
+        <div className="row">
+            <div className="col-12 text-center fw-bold h1">
+                Featured Restaurants
+
+            </div>
+        </div>
+        <div class="row mt-4">
+          <FeatureRestaurant src1={foodPhoto1} src2={img1}  button="Open Tomorrow" name="Food World" number="45" color="#f17228" bg="rgba(241, 114, 40, 0.2)"/>
+          <FeatureRestaurant src1={foodPhoto2} src2={img2}  button="Open Tomorrow" name="Donut Huts" number="100" color="#f17228" bg="rgba(241, 114, 40, 0.2)"/>
+          <FeatureRestaurant src1={foodPhoto3} src2={img3}  button="Open now" name="Donut Huts" number="25" color="#79B93C" bg="rgba(121, 185, 60, 0.2)"/>
+          <FeatureRestaurant src1={foodPhoto4} src2={img4}  button="Open now" name="Donut Huts" number="15" color="#79B93C" bg="rgba(121, 185, 60, 0.2)"/>
+        </div>
+        <div class="row mt-4">
+        <FeatureRestaurant src1={foodPhoto5} src2={img5}  button="Open now" name="Rubby Tuesday" number="75" color="#79B93C" bg="rgba(121, 185, 60, 0.2)"/>
+          <FeatureRestaurant src1={foodPhoto6} src2={img6}  button="Open now" name="Kukta fried ckn" number="100" color="#79B93C" bg="rgba(121, 185, 60, 0.2)"/>
+          <FeatureRestaurant src1={foodPhoto7} src2={img7}  button="Open now" name="Red Square" number="10" color="#79B93C" bg="rgba(121, 185, 60, 0.2)"/>
+          <FeatureRestaurant src1={foodPhoto8} src2={img8}  button="Open now" name="Taco Bell" number="170" color="#79B93C" bg="rgba(121, 185, 60, 0.2)"/>
+        </div>
+        </div>
+        
       </div>
   );
 }
